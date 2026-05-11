@@ -1,0 +1,209 @@
+properties:
+  note.last-contact:
+    displayName: 📆 Date Last Contacted
+  note.contact_type:
+    displayName: 👤 Type
+  note.birthday:
+    displayName: 🎂 Birthday
+  note.hometown:
+    displayName: 🏠 Hometown
+  note.location-met:
+    displayName: 📍 Location Met
+  note.date-met:
+    displayName: 📆 Date Met
+  note.based:
+    displayName: 📍 Location
+views:
+  - type: table
+    name: Default
+    filters:
+      and:
+        - file.inFolder("👤 Contacts")
+        - file.ext == "md"
+    order:
+      - file.name
+      - contact_type
+      - last-contact
+      - based
+      - birthday
+      - hometown
+      - location-met
+      - date-met
+      - archive
+    sort:
+      - property: last-contact
+        direction: DESC
+    columnSize:
+      note.based: 219
+      note.hometown: 303
+      note.location-met: 269
+  - type: table
+    name: Birthdays-12
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("12-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+      - based
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      note.birthday: 116
+  - type: table
+    name: Birthdays-11
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("11-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      file.name: 293
+      note.birthday: 151
+  - type: table
+    name: Birthdays-10
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("10-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      file.name: 293
+      note.birthday: 151
+  - type: table
+    name: Birthdays-09
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("09-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      file.name: 293
+      note.birthday: 151
+  - type: table
+    name: Birthdays-01
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("01-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      file.name: 293
+      note.birthday: 151
+  - type: table
+    name: Birthdays-04
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("04-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+      - based
+      - hometown
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      file.name: 293
+      note.birthday: 151
+  - type: table
+    name: Birthdays-05
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("05-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+      - based
+      - hometown
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      file.name: 293
+      note.birthday: 151
+  - type: table
+    name: Birthdays-03
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("03-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+      - based
+      - hometown
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      file.name: 293
+      note.birthday: 151
+  - type: table
+    name: Birthdays-02
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("02-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+      - based
+      - hometown
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      file.name: 293
+      note.birthday: 151
+  - type: table
+    name: Birthdays-06
+    filters:
+      and:
+        - file.name.startsWith("👤")
+        - birthday.startsWith("06-")
+    order:
+      - file.name
+      - birthday
+      - last-contact
+      - based
+      - hometown
+    sort:
+      - property: birthday
+        direction: ASC
+    columnSize:
+      file.name: 293
+      note.birthday: 151
